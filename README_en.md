@@ -1,5 +1,7 @@
 # my-actions
 
+[日本語](README.md)
+
 A collection of custom GitHub Actions (Composite Actions) for use in your workflows.
 
 ## Available Actions

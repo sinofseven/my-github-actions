@@ -1,5 +1,7 @@
 # my-actions
 
+[English](README_en.md)
+
 このリポジトリは、GitHub Actions ワークフロー内で使用するカスタムアクション（Composite Actions）の集合です。
 
 ## Available Actions
