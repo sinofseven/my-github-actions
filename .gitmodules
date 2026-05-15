@@ -1,0 +1,9 @@
+[submodule "action-request-id-token"]
+	path = action-request-id-token
+	url = git@github.com:sinofseven/action-request-id-token.git
+[submodule "action-verify-jwt"]
+	path = action-verify-jwt
+	url = git@github.com:sinofseven/action-verify-jwt.git
+[submodule "action-repository-dispatch"]
+	path = action-repository-dispatch
+	url = git@github.com:sinofseven/action-repository-dispatch.git
