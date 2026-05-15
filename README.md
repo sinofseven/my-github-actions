@@ -27,7 +27,7 @@ JWTトークンを検証するアクション
 
 **使用例：**
 ```yaml
-- uses: sinofseven/action-verify-jwt@v1.0.0
+- uses: sinofseven/action-verify-jwt@v1.1.0
   with:
     token: ${{ env.JWT_TOKEN }}  # [Required] 検証対象のJWTトークン
     jwks-url: 'https://example.com/.well-known/jwks.json'  # [Required] JWKS エンドポイントのURL
