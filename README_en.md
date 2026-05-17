@@ -14,7 +14,7 @@ Composite Action to retrieve GitHub OIDC ID tokens.
 
 **Usage Example:**
 ```yaml
-- uses: sinofseven/action-request-id-token@v1.0.0
+- uses: sinofseven/action-request-id-token@v1.0.1
   with:
     audience: 'my-service'  # [Optional] OIDC audience claim - identifier for external service
 ```
@@ -42,7 +42,7 @@ Action to send `repository_dispatch` event to another repository.
 
 **Usage Example:**
 ```yaml
-- uses: sinofseven/action-repository-dispatch@v1.0.0
+- uses: sinofseven/action-repository-dispatch@v1.0.1
   with:
     target_repo: 'org/target-repo'  # [Required] Target repository (owner/repo format)
     event_type: 'deploy'  # [Required] repository_dispatch event type

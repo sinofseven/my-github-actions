@@ -14,7 +14,7 @@ GitHub OIDC IDトークンを取得するアクション
 
 **使用例：**
 ```yaml
-- uses: sinofseven/action-request-id-token@v1.0.0
+- uses: sinofseven/action-request-id-token@v1.0.1
   with:
     audience: 'my-service'  # [Optional] OIDC audience クレーム - 外部サービスの識別子
 ```
@@ -42,7 +42,7 @@ JWTトークンを検証するアクション
 
 **使用例：**
 ```yaml
-- uses: sinofseven/action-repository-dispatch@v1.0.0
+- uses: sinofseven/action-repository-dispatch@v1.0.1
   with:
     target_repo: 'org/target-repo'  # [Required] イベント送信先リポジトリ（オーナー/リポジトリ形式）
     event_type: 'deploy'  # [Required] repository_dispatch イベントタイプ
