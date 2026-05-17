@@ -49,3 +49,20 @@ Action to send `repository_dispatch` event to another repository.
     token: ${{ secrets.GITHUB_TOKEN }}  # [Required] PAT with permissions for target repository
     payload: '{"environment": "production"}'  # [Optional] Payload passed when triggering event (JSON format)
 ```
+
+### action-workflow-dispatch
+
+Action to trigger a `workflow_dispatch` workflow in another repository.
+
+**Purpose:** Execute a specific workflow in another repository
+
+**Usage Example:**
+```yaml
+- uses: sinofseven/action-workflow-dispatch@v1.0.0
+  with:
+    target_repo: 'org/target-repo'  # [Required] Target repository (owner/repo format)
+    workflow_id: 'deploy.yml'  # [Required] Workflow file name or ID
+    ref: 'main'  # [Required] Branch or tag to run the workflow on
+    token: ${{ secrets.GITHUB_TOKEN }}  # [Required] PAT with Actions (Read and write) permissions
+    inputs: '{"environment": "production"}'  # [Optional] Workflow input parameters (JSON format)
+```

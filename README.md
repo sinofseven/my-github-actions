@@ -49,3 +49,20 @@ JWTトークンを検証するアクション
     token: ${{ secrets.GITHUB_TOKEN }}  # [Required] 対象リポジトリへの権限を持つPAT
     payload: '{"environment": "production"}'  # [Optional] イベント発火時に渡すペイロード（JSON形式）
 ```
+
+### action-workflow-dispatch
+
+別リポジトリの `workflow_dispatch` ワークフローをトリガーするアクション
+
+**用途：** 別のリポジトリの特定のワークフローを実行
+
+**使用例：**
+```yaml
+- uses: sinofseven/action-workflow-dispatch@v1.0.0
+  with:
+    target_repo: 'org/target-repo'  # [Required] ターゲットリポジトリ（オーナー/リポジトリ形式）
+    workflow_id: 'deploy.yml'  # [Required] ワークフローファイル名またはID
+    ref: 'main'  # [Required] 実行対象のブランチまたはタグ
+    token: ${{ secrets.GITHUB_TOKEN }}  # [Required] Actions (Read and write) 権限を持つPAT
+    inputs: '{"environment": "production"}'  # [Optional] ワークフロー入力パラメータ（JSON形式）
+```

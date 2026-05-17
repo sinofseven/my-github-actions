@@ -7,3 +7,6 @@
 [submodule "action-repository-dispatch"]
 	path = action-repository-dispatch
 	url = git@github.com:sinofseven/action-repository-dispatch.git
+[submodule "action-workflow-dispatch"]
+	path = action-workflow-dispatch
+	url = git@github.com:sinofseven/action-workflow-dispatch.git
